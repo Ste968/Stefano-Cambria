@@ -3,59 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptiBizCore - Apps for Creators</title>
+    <title>OptiBizCore — Apps for Creators</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f9f9fb 0%, #f0f2f5 100%);
+            color: #1d1d1f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        h1 { color: #007AFF; }
-        h2 { margin-top: 2em; color: #333; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        a { color: #007AFF; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #007AFF;
+            border-radius: 20px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: #1d1d1f;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #86868b;
+            margin: 0 0 32px;
+        }
+        .app-card {
+            background: #f5f7fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .app-card h2 {
+            margin: 0 0 12px;
+            font-size: 22px;
+            color: #007AFF;
+        }
+        .app-card p {
+            margin: 0;
+            color: #424246;
+            line-height: 1.5;
+        }
+        .languages {
+            margin-top: 32px;
+        }
+        .languages h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        .lang-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .lang-list li {
+            margin: 8px 0;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 32px;
+            color: #86868b;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <h1>OptiBizCore</h1>
-    <p>Apps for photographers and content creators.</p>
+    <div class="container">
+        <div class="logo">OB</div>
+        <h1>OptiBizCore</h1>
+        <p class="subtitle">Apps for photographers and content creators</p>
 
-    <h2>Photo Manager Pro</h2>
-    <p>Organize your photo library by date and location — 100% offline, no cloud, no tracking.</p>
+        <div class="app-card">
+            <h2>Photo Manager Pro</h2>
+            <p>Organize your photo library by date and location — 100% offline, no cloud, no tracking.</p>
+        </div>
 
-    <h2>Legal & Support</h2>
-    <p>Choose your language:</p>
-    <ul>
-        <li><strong>English</strong>: 
-            <a href="privacy/en.html">Privacy Policy</a> | 
-            <a href="support/en.html">Support</a>
-        </li>
-        <li><strong>Italiano</strong>: 
-            <a href="privacy/it.html">Informativa sulla Privacy</a> | 
-            <a href="support/it.html">Supporto</a>
-        </li>
-        <li><strong>Español</strong>: 
-            <a href="privacy/es.html">Política de Privacidad</a> | 
-            <a href="support/es.html">Soporte</a>
-        </li>
-        <li><strong>Français</strong>: 
-            <a href="privacy/fr.html">Politique de Confidentialité</a> | 
-            <a href="support/fr.html">Support</a>
-        </li>
-        <li><strong>Deutsch</strong>: 
-            <a href="privacy/de.html">Datenschutzrichtlinie</a> | 
-            <a href="support/de.html">Support</a>
-        </li>
-        <li><strong>简体中文</strong>: 
-            <a href="privacy/zh-Hans.html">隐私政策</a> | 
-            <a href="support/zh-Hans.html">支持</a>
-        </li>
-    </ul>
+        <div class="languages">
+            <h2>Legal & Support</h2>
+            <p>Choose your language:</p>
+            <ul class="lang-list">
+                <li><strong>English</strong>: 
+                    <a href="privacy/en.html">Privacy Policy</a> | 
+                    <a href="support/en.html">Support</a>
+                </li>
+                <li><strong>Italiano</strong>: 
+                    <a href="privacy/it.html">Informativa sulla Privacy</a> | 
+                    <a href="support/it.html">Supporto</a>
+                </li>
+                <li><strong>Español</strong>: 
+                    <a href="privacy/es.html">Política de Privacidad</a> | 
+                    <a href="support/es.html">Soporte</a>
+                </li>
+                <li><strong>Français</strong>: 
+                    <a href="privacy/fr.html">Politique de Confidentialité</a> | 
+                    <a href="support/fr.html">Support</a>
+                </li>
+                <li><strong>Deutsch</strong>: 
+                    <a href="privacy/de.html">Datenschutzrichtlinie</a> | 
+                    <a href="support/de.html">Support</a>
+                </li>
+                <li><strong>简体中文</strong>: 
+                    <a href="privacy/zh-Hans.html">隐私政策</a> | 
+                    <a href="support/zh-Hans.html">支持</a>
+                </li>
+            </ul>
+        </div>
 
-    <p><small>© 2026 OptiBizCore. All rights reserved.</small></p>
+        <div class="footer">
+            <p>© 2026 OptiBizCore. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
